@@ -1,0 +1,78 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
+a:hover {
+  color: white;
+}
+
+.customFirstNav {
+  transition: all 0.3s ease-out;
+}
+
+.firstNavbar-styles {
+  @apply flex gap-x-1.5 tablets:mx-0 mx-1 items-center cursor-pointer;
+}
+
+.dropdownDiv {
+  animation: dropdown 0.3s ease-out;
+}
+
+.customSecondNav {
+  background: linear-gradient(to bottom, #5666ad 0, #4b57a4 100%);
+}
+
+.customContact {
+  background-color: rgba(20, 20, 25, 0.15);
+}
+
+.transitionProperty {
+  animation: menuTransition 0.3s ease-in-out;
+}
+
+@keyframes menuTransition {
+  0% {
+    transform: translateY(-50%);
+    opacity: 50%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.customModal {
+  animation: dropdown 0.4s ease-out;
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-25%);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.customModalButton:hover {
+  animation: modalButton 0.16s linear forwards;
+}
+
+@keyframes modalButton {
+  0% {
+    background-color: #1d1d21;
+  }
+  50% {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
+  100% {
+    background-color: #5666ad;
+  }
+}
