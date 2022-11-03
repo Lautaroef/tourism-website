@@ -1,5 +1,3 @@
-import React from "react";
-
 function DropdownLanguage() {
   return (
     <ul className="dropdownDiv absolute top-7 right-0 left-0 flex flex-col gap-y-2 text-left py-4 px-4 min-w-max bg-white text-black rounded-5px shadow-md">

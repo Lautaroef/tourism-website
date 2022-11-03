@@ -6,12 +6,7 @@ function FormAndMap() {
       <div className="col-md-6 flex">
         <div className="form h-100">
           <h3 className=" font-semibold">Send us a message</h3>
-          <form
-            className="mb-5"
-            method="post"
-            id="contactForm"
-            name="contactForm"
-          >
+          <form className="mb-5" method="post" id="contactForm" name="contactForm">
             <div className="row">
               <div className="col-md-6 form-group mb-5">
                 <label htmlFor="" className="col-form-label">
@@ -75,8 +70,8 @@ function FormAndMap() {
                   className="form-control"
                   name="message"
                   id="message"
-                  cols="30"
-                  rows="4"
+                  cols={30}
+                  rows={4}
                   placeholder="Write your message"
                 ></textarea>
               </div>

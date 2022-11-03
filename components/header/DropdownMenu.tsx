@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
-function Dropdown({ links, hideDropdown }) {
+function Dropdown({ links, hideDropdown }: NavItem) {
   return (
     <nav
       className={`transitionProperty z-0 w-full bg-toggleBgColor text-sm font-medium text-toggleTextColor`}
@@ -9,14 +8,14 @@ function Dropdown({ links, hideDropdown }) {
       <ul className="flex flex-col" onClick={hideDropdown}>
         {links.map((item, index) => {
           return (
-            <Link to={item.to} key={index}>
+            <Link href={item.href} key={index}>
               <li className=" w-full pl-6 transition duration-400 border-b border-toggleBorderBottom cursor-pointer py-2.5 hover:text-secondNav hover:bg-toggleHoverBg">
-                {item.title}
+                {item.label}
               </li>
             </Link>
           );
         })}
-        <Link to="/Contact">
+        <Link href="/Contact">
           <li className="w-full pl-6 transition duration-400 border-b border-toggleBorderBottom cursor-pointer py-2.5 hover:text-secondNav hover:bg-toggleHoverBg">
             CONTACT
           </li>

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
 import { FaStripeS, FaGithub } from "react-icons/fa";
@@ -27,8 +28,8 @@ function index() {
               {/* Personal Information*/}
 
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-6">
-                <Link to="/">
-                  <img
+                <Link href="/">
+                  <Image
                     src="https://www.barlantravel.com/images/logo-white.png"
                     alt="Lausof.com"
                     className="w-32 customFirstNav mb-4"
@@ -48,16 +49,16 @@ function index() {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase font-bold mb-4">About Us</h6>
                 <p>
-                  <Link to="/" className="block">
+                  <Link href="/" className="block">
                     Home
                   </Link>
-                  <Link to="/About" className="block">
+                  <Link href="/About" className="block">
                     About us
                   </Link>
-                  <Link to="/" className="block">
+                  <Link href="/" className="block">
                     News
                   </Link>
-                  <Link to="/Contact" className="block">
+                  <Link href="/Contact" className="block">
                     Contact
                   </Link>
                 </p>
@@ -83,11 +84,11 @@ function index() {
               {/* Payment Methods */}
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Payment Methods</h6>
-                <img src={mercadoLibre} alt="Mercado libre" className="w-28" />
-                <img src={paypal} alt="PayPal" className="w-28" />
+                <Image src={mercadoLibre} alt="Mercado libre" className="w-28" />
+                <Image src={paypal} alt="PayPal" className="w-28" />
                 <div className="flex mt-1.5">
                   <FaStripeS className="text-2xl" />
-                  <img src={stripe} alt="Stripe" className="w-16 ml-4" />
+                  <Image src={stripe} alt="Stripe" className="w-16 ml-4" />
                 </div>
               </div>
             </div>

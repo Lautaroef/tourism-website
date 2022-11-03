@@ -5,13 +5,12 @@ import { randomNumberBetweenInterval } from "../../components/Header/Weather/Pur
 import star from "./images/star.png";
 
 const ShowPlace = ({ name, rate, xid }) => {
-  const { data = { preview: { source: null } }, isFetching } =
-    useFetchSinglePlaceQuery(xid);
+  const { data = { preview: { source: null } }, isFetching } = useFetchSinglePlaceQuery(xid);
 
   const randomPrice = randomNumberBetweenInterval(43, 79);
 
   return (
-    <Link to={`/SinglePlace/${xid}`} className="custom-div">
+    <Link href={`/SinglePlace/${xid}`} className="custom-div">
       <img
         className="custom-image"
         style={{

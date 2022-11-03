@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import DropdownLanguage from "./DropdownLanguage";
 import DropdownMenu from "./DropdownMenu";
 import UseWindowSize from "../UseWindowSize";
@@ -11,7 +10,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
-function FirstNavbar({ links }) {
+function FirstNavbar({ links }: { links: NavItem[] }) {
   const [innerWidth] = UseWindowSize();
   const [distanceToTop, setDistanceToTop] = useState(0);
   const [dropdownLanguage, setDropdownLanguage] = useState(false);
@@ -29,7 +28,7 @@ function FirstNavbar({ links }) {
           distanceToTop === 0 ? "md:py-8 py-4" : "lg:py-2 py-1.5"
         } customFirstNav mx-auto lg:px-8 tablets:px-4 lg:max-w-6xl flex flex-1 justify-between items-center bg-firstNav`}
       >
-        <Link to="/">
+        <Link href="/">
           <img
             src="https://www.barlantravel.com/images/logo-white.png"
             alt="Lausof.com"
@@ -57,10 +56,7 @@ function FirstNavbar({ links }) {
               <p className="tablets:block hidden">WHATSAPP</p>
             </a>
           </li>
-          <li
-            className="relative"
-            onClick={() => setDropdownLanguage(!dropdownLanguage)}
-          >
+          <li className="relative" onClick={() => setDropdownLanguage(!dropdownLanguage)}>
             {dropdownLanguage && <DropdownLanguage />}
             <a href="#" className="customList firstNavbar-styles">
               <IoEarthSharp className="text-base sm:block hidden" />

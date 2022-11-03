@@ -1,22 +1,23 @@
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-function FastMenu({ className }) {
-  const { pathname } = useLocation();
+type Props = {
+  className: string;
+};
+
+function FastMenu({ className }: Props) {
+  const { pathname } = useRouter();
 
   return (
     <ul className={className}>
       <h3>Fast Menu</h3>
-      <Link to="/" className={`${pathname === "/" ? "active" : ""}`}>
+      <Link href="/" className={`${pathname === "/" ? "active" : ""}`}>
         Home
       </Link>
-      <Link to="/About" className={`${pathname === "/About" ? "active" : ""}`}>
+      <Link href="/About" className={`${pathname === "/About" ? "active" : ""}`}>
         About us
       </Link>
-      <Link
-        to="/Contact"
-        className={`${pathname === "/Contact" ? "active" : ""}`}
-      >
+      <Link href="/Contact" className={`${pathname === "/Contact" ? "active" : ""}`}>
         Contact
       </Link>
     </ul>

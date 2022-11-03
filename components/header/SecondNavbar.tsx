@@ -17,7 +17,7 @@ function SecondNavbar({ links }) {
           );
         })}
       </ul>
-      <Link to="/Contact">
+      <Link href="/Contact">
         <li className="customContact transition duration-700 list-none tablets:px-2 sm:px-1 lg:py-3.5 py-2.5 text-tiny hover:bg-secondNav">
           CONTACT
         </li>
