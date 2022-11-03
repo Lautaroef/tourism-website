@@ -9,6 +9,7 @@ import {
   CategoryStyled,
   Highlights,
 } from "../../components/single-place/styled-components";
+import { useEffect } from "react";
 
 function SinglePlace() {
   const router = useRouter();
@@ -23,8 +24,9 @@ function SinglePlace() {
     wikipedia_extracts: { text = "" } = {},
   } = data;
 
-  const categories: string[] = StringToArray(kinds);
-  window.scrollTo(0, 0);
+  const categories: string[] = StringToArray(kinds) as string[];
+
+  useEffect(() => window.scrollTo(0, 0), []);
 
   return (
     <div className="lg:max-w-5xl mx-auto px-4 mt-6">
