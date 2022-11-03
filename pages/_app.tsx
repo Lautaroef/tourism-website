@@ -8,6 +8,7 @@ import store from "../redux/store";
 import { Provider } from "react-redux";
 
 // components
+// @ts-ignore
 import Header from "../components/Header";
 import Footer from "../components/Footer/index";
 import { useCallback, useEffect, useState } from "react";

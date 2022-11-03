@@ -1,4 +1,3 @@
-import React from "react";
 import FirstNavbar from "./FirstNavbar";
 import SecondNavbar from "./SecondNavbar";
 
