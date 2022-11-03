@@ -9,9 +9,9 @@ import { Provider } from "react-redux";
 
 // components
 // @ts-ignore
-import Header from "../components/Header";
+import Header from "../components/header";
 // @ts-ignore
-import Footer from "../components/Footer/index";
+import Footer from "../components/footer";
 import { useCallback, useEffect, useState } from "react";
 import { disableScroll, enableScroll } from "../utils/functions/PureFunctions";
 

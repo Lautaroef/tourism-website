@@ -1,6 +1,5 @@
 import { useGlobalContext } from "../../../Context";
-// @ts-ignore
-import WeatherModal from "./Modal/WeatherModal";
+import WeatherModal from "./modal/WeatherModal";
 import { kelvinToCelsius } from "../../../utils/functions/PureFunctions";
 
 function Weather() {
