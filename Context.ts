@@ -1,6 +1,15 @@
 import { createContext, useContext } from "react";
 
-export const AppContext = createContext({
+interface Props {
+  isModalOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+  singleDayWeather: any;
+  restOfDaysWeathers: any;
+  CITY: string;
+}
+
+export const AppContext = createContext<Props>({
   isModalOpen: false,
   openModal: () => {},
   closeModal: () => {},
