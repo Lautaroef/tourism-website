@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 // components
 // @ts-ignore
 import Header from "../components/Header";
+// @ts-ignore
 import Footer from "../components/Footer/index";
 import { useCallback, useEffect, useState } from "react";
 import { disableScroll, enableScroll } from "../utils/functions/PureFunctions";
