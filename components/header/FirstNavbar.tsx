@@ -3,6 +3,7 @@ import Link from "next/link";
 import DropdownLanguage from "./DropdownLanguage";
 import DropdownMenu from "./DropdownMenu";
 import UseWindowSize from "../../utils/functions/UseWindowSize";
+// @ts-ignore
 import Weather from "./Weather/Weather";
 import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
 import { IoEarthSharp } from "react-icons/io5";
