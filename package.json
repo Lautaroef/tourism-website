@@ -1,60 +1,36 @@
 {
   "homepage": "http://Lautaroef.github.io/tourism-website-react-03/",
-  "name": "5_tourism-page",
+  "name": "tourism-website",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.4.2",
-    "@reduxjs/toolkit": "^1.6.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.24.0",
-    "bootstrap": "^5.1.3",
-    "history": "^5.1.0",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.3",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-redux": "^7.2.6",
-    "react-router": "^6.0.2",
-    "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
-    "react-transition-group": "^4.4.2",
-    "redux": "^4.1.2",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "bootstrap": "^5.2.2",
+    "next": "13.0.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "react-redux": "^8.0.4",
+    "redux": "^4.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "gh-pages": "^3.2.3",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "autoprefixer": "^10.4.13",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.8.4"
   }
 }

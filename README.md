@@ -1,64 +1,34 @@
-# Tourism Booking Website.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Project 02
+## Getting Started
 
----
+First, run the development server:
 
-This website is a tourism oriented business, in which i applied some Front End tools to replicate a website in which i think it has a nice
-User Interface & Experience, because of it's easy and useful way to sort out a common problem when you are trying to go vacations. 👉 [BarlanTravel.com](https://www.barlantravel.com/)
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### **Technologies used**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This website was made using these technologies:
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-- HTML
-- CSS
-- JavaScript
-- styled-components 💅
-- Tailwind CSS
-- ReactJS
-  - Hooks
-  - Custom Hooks
-  - react-router
-- Redux Toolkit
-  - createAsyncThunk - createSlice
-  - createApi
-- Git & Github
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-### **Why i used/learned this libraries/frameworks**.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-> **ReactJs** in combination with **Hooks** & **custom Hooks**
+## Learn More
 
-Im using **React** for the creation of reusable components easy to maintain, i tried to keep the information received by the components as easy to understand as possible and convenient.
-With the combination also of classic props to components children and useContext Hook for handle some state-management.<br/>
-Later Redux library was implemented too.
+To learn more about Next.js, take a look at the following resources:
 
-It this project were used:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. useState()
-1. useEffect()
-1. useRef()
-1. useContext()
-1. useCallback()
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- useLocalStorage()
-- useWindowSize()
-- ~~GetUserLocation~~()
+## Deploy on Vercel
 
-Apart of various Pure Functions implementations in certain occasions where i found them useful.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## **State management** using **useContext** and **Redux Toolkit**
-I used the **useContext** hook provided by React to handle the state of the Weather API info because i need the information in the header, and second when the weather's modal is opened (made with createPortal()). The difference is that in the header i need information of day 1 and in the modal im calling information for the next 5 days.
-
-Next, i used **Redux Toolkit** to manage the PlacesAPI information as i thought that the useContext file would get messy and most important was that if 1 part would need to render all the rest would re-render unnecessary causing performance issues.<br/>
-Here i used _createAsyncThunks_ methods and all its procedure to make the 3 necessary API calls to get what were required. Last one call was made using createApi method.
-
-## Pages Routing using **react-router/-dom v6**
-
-Used in this project this routing library to easily handle pagination and provide awesome performance.<br/>
-Usage of useParams hook to get the unique id of the Place clicked on the Home page, and display it's content on the "SinglePlace" page. <br/>
-useLocation hook was also implemented for styling purposes (styled-components).
-
-<!-- styled-components (Used 100% to set up the "SinglePlace" pages)
-
-(Slider & Contact Page) -->
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
